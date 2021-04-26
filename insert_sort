@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+
+from random import sample 
+
+def insert(lst):
+    print('Insertion Sort')
+    n = len(lst)
+    for i in range(1,n):
+        pvt = lst[i]
+        p = i
+        while p >= 1 and pvt < lst[p-1]:
+            lst[p] = lst[p-1]
+            p -= 1
+        lst[p] = pvt
+    return lst
+
+lst = sample(range(100),100)
+
+print("Unsorted List\n",lst,"\n")
+print(insert(lst))
