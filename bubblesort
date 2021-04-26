@@ -17,7 +17,7 @@ def bubble(lst):
         p += 1
     return lst
 
-lst = sample(range(100),100) 
+lst = sample(range(10000),10000) 
 
 print("Unsorted List\n",lst,"\n")
 print(bubble(lst),"\n")

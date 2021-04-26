@@ -19,6 +19,6 @@ def selection(lst):
     
     return lst
 
-lst = sample(range(0,200),200)
-print(selection(lst))
-
+lista = sample(range(200),200)
+print(lista)
+print(selection(lista))

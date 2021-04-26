@@ -14,7 +14,8 @@ def insert(lst):
         lst[p] = pvt
     return lst
 
-lst = sample(range(100),100)
+cnt = 10000
+lst = sample(range(cnt),cnt)
 
-print("Unsorted List\n",lst,"\n")
-print(insert(lst))
+#print("Unsorted List\n",lst,"\n")
+print("Sorted:\n",insert(lst))

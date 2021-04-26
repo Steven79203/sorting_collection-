@@ -1,5 +1,10 @@
 #!/usr/bin/env python 
 
+# Merge Sort
+# Referência: https://www.youtube.com/watch?v=5prE6Mz8Vh0&t=1219s
+
+from random import sample 
+
 def mergesort(lista, inicio=0, fim=None):
     if fim is None:
         fim = len(lista)
@@ -28,3 +33,7 @@ def merge(lista, inicio, meio, fim):
             lista[k] = right[top_right]
             top_right += 1
 
+lst = sample(range(0,10000),10000)
+#print("Unsorted:",lst)
+mergesort(lst)
+print("Sorted:",lst)
